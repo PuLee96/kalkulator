@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Moj Kalkulator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <div id="header">
+    <h1>Tip Calculator</h1>
+  </div>
+  <div>
+    <p>How much was your bill?</p>
+    <span>Kn</span>
+    <input id="racun" type="text" placeholder="Bill value">
+    <p>How was your service?</p>
+    <select id="kvaliteta">
+        <option disabled selected value="0">-- Choose an Option --</option>
+        <option value="0.2">20% - Excellent</option>
+        <option value="0.15">15% - Very Good</option>
+        <option value="0.1">10% - Good</option>
+        <option value="0.05">5% - Low</option>
+    </select>
+    <p>How many people are sharing the bill?</p>
+    <input id="brojLjudi" type="text" placeholder="Number of people">
+    <button>Calculate</button>
+  </div>  
+  <div id="suma">
+    <p>Tip Amount</p>
+    <p id="izracun">0.00<span> kn</span></p>
+    <p>svaki</p>
+  </div>
+</div>
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
